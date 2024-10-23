@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: JobApplication
+  annotations:
+    github.com/project-slug: Mokshithsaigit/JobApplication
+spec:
+  type: other
+  owner: group:default/guests
+  lifecycle: unknown
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: jobs-api
+  description: API for jobs
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:default/tac
+  definition:
+    $text: https://my.insideview.com/integrations/v2/api-docs
